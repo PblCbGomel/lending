@@ -1,0 +1,24 @@
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.inactive-up {
+  transform: translate(0px, 120px);
+  opacity: 0;
+}
+
+.inactive-down {
+  transform: translate(0px, -50px);
+  opacity: 0;
+}
+
+.inactive-left {
+  transform: translate(-200px, 0px);
+  opacity: 0;
+}
+
+.inactive-right {
+  transform: translate(200px, 0px);
+  opacity: 0;
+}
