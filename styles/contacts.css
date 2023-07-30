@@ -1,0 +1,31 @@
+.contacts-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.contancs-list {
+  transition: all 0.4s ease 0s;
+  color: #323232;
+  font-size: 1.25rem;
+}
+
+.contancs-list ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35vw;
+  height: 45vh;
+  row-gap: 3rem;
+}
+
+.contancs-list ul li {
+  display: inline-block;
+}
+
+.map-container {
+  transition: all 0.4s ease 0s;
+  overflow: hidden;
+  width: 35vw;
+  height: 45vh;
+}

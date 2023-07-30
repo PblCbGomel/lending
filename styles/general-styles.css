@@ -30,3 +30,29 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: #202020;
 }
+
+main {
+  background-color: #e1e1e1;
+}
+
+section {
+  padding: 4rem;
+  border: 1px solid black;
+}
+
+main h2 {
+  color: #323232;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: all 0.4s ease 0.15s;
+}
+
+footer {
+  background-color: #202020;
+  width: 100%;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #e1e1e1;
+}
