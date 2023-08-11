@@ -39,7 +39,7 @@
 @media screen and (max-width: 768px) {
   .contacts-container {
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
   }
 
   .contancs-list ul {

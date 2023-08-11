@@ -3,6 +3,11 @@
   opacity: 1;
 }
 
+.active.contancs-list,
+.active.map-container {
+  display: block;
+}
+
 .inactive-up {
   transform: translate(0px, 120px);
   opacity: 0;

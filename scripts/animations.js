@@ -43,7 +43,10 @@ function onScrollLeft() {
         ? window.innerHeight - window.innerHeight / animetedStart
         : window.innerHeight - itemHeight / animetedStart;
 
-    if (pageYOffset > itemOffset - animetedPoint) {
+    if (
+      pageYOffset > itemOffset - animetedPoint + 100 &&
+      pageYOffset < itemOffset - itemHeight + 100
+    ) {
       item.classList.add("active");
       item.classList.remove("inactive-left");
     } else {
@@ -85,7 +88,10 @@ function onScrollRight() {
         ? window.innerHeight - window.innerHeight / animetedStart
         : window.innerHeight - itemHeight / animetedStart;
 
-    if (pageYOffset > itemOffset - animetedPoint) {
+    if (
+      pageYOffset > itemOffset - animetedPoint + 100 &&
+      pageYOffset < itemOffset - itemHeight + 100
+    ) {
       item.classList.add("active");
       item.classList.remove("inactive-right");
     } else {
