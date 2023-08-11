@@ -62,21 +62,38 @@ goodsInfo.forEach((info) => {
 });
 
 const card = carousel.querySelector(".card");
-
-const carouselWidth = carousel.offsetWidth;
 const cardStyle = card.currentStyle || window.getComputedStyle(card);
-const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+const cardCount = goodsInfo.length;
 
-const cardCount = carousel.querySelectorAll(".card").length;
-const cardWidth = card.offsetWidth;
-
+let carouselWidth;
+let cardMarginRight;
+let cardWidth;
 let offsetCarousel = 0;
-const maxX = -(
-  (cardCount / 3) * carouselWidth +
-  cardMarginRight * (cardCount / 3) -
-  carouselWidth -
-  cardMarginRight
-);
+let cardsOnPage = 3;
+let maxX;
+
+function updateData() {
+  carouselWidth = carousel.offsetWidth;
+  cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+  cardWidth = card.offsetWidth;
+  if (window.innerWidth > 1000) {
+    cardsOnPage = 3;
+  } else if (window.innerWidth > 768) {
+    cardsOnPage = 2;
+  } else {
+    cardsOnPage = 1;
+  }
+  maxX = -(
+    (cardCount / cardsOnPage) * carouselWidth +
+    cardMarginRight * (cardCount / cardsOnPage) -
+    carouselWidth -
+    cardMarginRight
+  );
+}
+
+updateData();
+
+window.addEventListener("resize", updateData);
 
 leftButton.addEventListener("click", function () {
   if (offsetCarousel !== 0) {

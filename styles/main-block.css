@@ -8,6 +8,7 @@ section.main-info {
   padding: 10rem;
 
   position: relative;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -43,4 +44,17 @@ h1::after {
 p {
   font-size: 1.75rem;
   transition: all 0.6s ease 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  section.main-info {
+    padding: 0 6rem;
+  }
 }

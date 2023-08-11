@@ -36,3 +36,12 @@
   font-size: 1rem;
   color: #202020;
 }
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    height: 230px;
+  }
+  .service-figcaption {
+    height: calc(80px);
+  }
+}
