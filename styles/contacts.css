@@ -36,6 +36,10 @@
   height: 100%;
 }
 
+.contancs-list.dark {
+  color: #e1e1e1;
+}
+
 @media screen and (max-width: 768px) {
   .contacts-container {
     flex-direction: column;

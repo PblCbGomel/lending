@@ -38,6 +38,7 @@ main {
 section {
   padding: 4rem;
   border: 1px solid black;
+  transition: 0.3s;
 }
 
 main h2 {
@@ -55,6 +56,14 @@ footer {
   font-size: 0.75rem;
   text-align: center;
   color: #e1e1e1;
+}
+
+main.dark {
+  background-color: #323232;
+}
+
+main.dark h2 {
+  color: #e8e8e8;
 }
 
 @media screen and (max-width: 1000px) {

@@ -5,6 +5,7 @@
   gap: 2rem 4rem;
   justify-content: center;
   margin: auto;
+  color: #202020;
 }
 
 .service-card {
@@ -34,7 +35,10 @@
 
 .service-figcaption h6 {
   font-size: 1rem;
-  color: #202020;
+}
+
+.services-wrapper.dark {
+  color: #e1e1e1;
 }
 
 @media screen and (max-width: 768px) {
