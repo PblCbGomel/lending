@@ -1,6 +1,6 @@
 .carousel-wrapper {
   height: 300px;
-  width: calc(750px + 2rem);
+  width: calc(1250px + 4rem);
   position: relative;
   overflow: hidden;
   margin: 3rem auto 3rem;
@@ -101,6 +101,18 @@
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .carousel-wrapper {
+    width: calc(1000px + 3rem);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .carousel-wrapper {
+    width: calc(750px + 2rem);
+  }
 }
 
 @media screen and (max-width: 1000px) {

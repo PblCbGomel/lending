@@ -76,7 +76,11 @@ function updateData() {
   carouselWidth = carousel.offsetWidth;
   cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
   cardWidth = card.offsetWidth;
-  if (window.innerWidth > 1000) {
+  if (window.innerWidth > 1500) {
+    cardsOnPage = 5;
+  } else if (window.innerWidth > 1280) {
+    cardsOnPage = 4;
+  } else if (window.innerWidth > 1000) {
     cardsOnPage = 3;
   } else if (window.innerWidth > 768) {
     cardsOnPage = 2;
