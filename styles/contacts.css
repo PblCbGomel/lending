@@ -29,3 +29,8 @@
   width: 35vw;
   height: 45vh;
 }
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
