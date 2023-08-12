@@ -33,12 +33,12 @@ html {
 
 main {
   background-color: #e1e1e1;
+  transition: 0.3s;
 }
 
 section {
   padding: 4rem;
   border: 1px solid black;
-  transition: 0.3s;
 }
 
 main h2 {
