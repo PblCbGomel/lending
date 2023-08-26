@@ -1,6 +1,6 @@
 section.main-info {
   background-image: url(../assets/Пинск.jpg);
-  background-attachment: scroll;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
@@ -56,5 +56,21 @@ p {
 
   section.main-info {
     padding: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.main-info {
+    height: 45vh;
+    background-position: center 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.15rem;
   }
 }
