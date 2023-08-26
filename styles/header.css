@@ -22,7 +22,7 @@ nav ul li {
   line-height: 3rem;
   text-align: center;
   transition: 0.3s;
-  cursor: pointer;
+  cursor: url(../assets/cursor/active-cursor.svg), default;
 }
 
 nav ul li:hover {
@@ -33,6 +33,7 @@ nav ul li a {
   text-decoration: none;
   transition: 0.5s;
   color: #e8e8e8;
+  cursor: url(../assets/cursor/active-cursor.svg), default;
 }
 
 nav ul li:hover a {
@@ -50,7 +51,7 @@ nav ul li:hover a {
   background-size: 2rem;
   background-color: #ffffff00;
 
-  cursor: pointer;
+  cursor: url(../assets/cursor/active-cursor.svg), default;
   transition: 0.3s;
 }
 

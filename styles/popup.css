@@ -1,0 +1,99 @@
+.popup-wrapper {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
+}
+
+.popup {
+  width: 60vw;
+  height: 70vh;
+  border-radius: 0.5rem;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #585858;
+}
+
+.popup-wrapper.active {
+  display: flex;
+}
+
+.popup-is-opened {
+  overflow: hidden;
+}
+
+button.cross {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+
+  background-color: #a4a4a490;
+  border: 2px solid #444444;
+  border-radius: 50%;
+
+  cursor: url(../assets/cursor/active-cursor.svg), default;
+  transition: 0.3s;
+}
+
+button.cross:hover {
+  background-color: #b2b2b290;
+  transition: 0.3s;
+}
+
+button.cross:active {
+  background-color: #c4c3c390;
+  transition: 0.3s;
+}
+
+h3 {
+  text-align: center;
+}
+
+.btn-direction-wrapper {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button.path {
+  font-size: 0.75rem;
+  line-height: 1.75rem;
+  border-radius: 0.75rem;
+  padding: 0 1.25rem;
+
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: #bc9600;
+  color: #323232;
+  font-weight: 700;
+
+  cursor: url(../assets/cursor/active-cursor.svg), default;
+  transition: 0.3s;
+}
+
+button.path:hover {
+  background-color: #c8a000;
+  transition: 0.3s;
+}
+
+button.path:active {
+  background-color: #d0a702;
+  transition: 0.3s;
+}

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4rem;
   column-gap: 4rem;
 }
 
@@ -9,6 +11,7 @@
   transition: all 0.4s ease 0s;
   color: #323232;
   font-size: 1.25rem;
+  user-select: text;
 }
 
 .contancs-list ul {
@@ -28,6 +31,7 @@
   text-decoration: none;
   color: inherit;
   transition: 0.3s;
+  cursor: url(../assets/cursor/active-cursor.svg), default;
 }
 
 .contancs-list ul li a:hover {
@@ -62,6 +66,33 @@
 
 .contancs-list.dark ul li a:active {
   color: #d6d6d6;
+}
+
+button.direction {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  border-radius: 2rem;
+  padding: 0 2rem;
+
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: #bc9600;
+  color: #323232;
+  font-weight: 700;
+
+  cursor: url(../assets/cursor/active-cursor.svg), default;
+  transition: 0.3s;
+}
+
+button.direction:hover {
+  background-color: #c8a000;
+  transition: 0.3s;
+}
+
+button.direction:active {
+  background-color: #d0a702;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {

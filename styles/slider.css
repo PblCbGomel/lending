@@ -68,7 +68,7 @@
   border: none;
   font: inherit;
   color: inherit;
-  cursor: pointer;
+  cursor: url(../assets/cursor/active-cursor.svg), default;
   background-color: #c9c9c975;
   transition: 0.3s;
   display: block;

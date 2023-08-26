@@ -4,6 +4,7 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: #202020 #e1e1e1;
+  cursor: url(../assets/cursor/default-cursor.svg), default;
 }
 
 html {
@@ -13,6 +14,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: auto;
+  user-select: none;
 }
 
 ::selection {
