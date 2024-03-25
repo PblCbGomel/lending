@@ -7,6 +7,10 @@
   cursor: url(../assets/cursor/default-cursor.svg), default;
 }
 
+.display-none {
+  display: none;
+}
+
 html {
   font-family: "Jost", sans-serif;
   font-size: 18px;
